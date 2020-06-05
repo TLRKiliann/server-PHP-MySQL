@@ -1,0 +1,767 @@
+@font-face
+{
+    font-family: 'amita-bold';
+    src: url('polices/amita-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-color: #247384;
+    font-family: 'Trebuchet MS', Arial, serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1
+{
+    color: navy;
+    text-shadow: 2px 2px #77b9c7;
+}
+
+h2
+{
+    color: navy;
+}
+
+h3
+{
+    color: #77b9c7;
+    text-shadow: 2px 2px navy;
+    text-shadow: 2px 2px 2px navy;
+}
+
+h4
+{
+    color: navy;
+    padding-left: 10px;
+}
+
+h5
+{
+    color: yellow;
+}
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+/*Header*/
+header
+{
+    background: url('../images/sepa.jpg') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 300px;
+}
+
+header h1
+{
+    font-family: arial, serif;
+    color: white;
+    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3.4em;
+    font-weight: normal;
+    margin: 0 0 0 0px;
+}
+
+header h2
+{
+    font-family: arial, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Main menu pseudo et déconnexion */
+.systema
+{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+    margin-left: 300px;
+    height: 30px;
+    line-height: 20px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    background-color: #77b9c7;
+}
+
+.bmenu
+{
+    margin-left: 10px;
+}
+
+.bmenudeco
+{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px navy;
+    text-shadow: 1px 1px 1px navy;
+    font-size: 1.2em;
+}
+
+.bmenudeco:hover
+{
+    color: aquamarine;
+}
+
+.pseudocount
+{
+    margin-left: 30%;
+}
+
+.pseudodeco
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-width: 2px;
+    color: navy;
+    /*text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;*/
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.0em;
+}
+
+/*Le logo avec deco*/
+.deconnect
+{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: inline-block;
+}
+
+.img_dec
+{
+    width: 18%;
+    height: 18%;
+}
+
+.decodeco
+{
+    margin-left: 3px;
+    text-decoration: none;
+    color: yellow;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    font-size: 1.2em;
+}
+
+.decodeco:hover
+{
+    color: red;
+}
+/*MODIFin*/
+
+
+#titre_principal
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre_principal h2
+{
+    color: white;
+}
+
+/*Titre principale pivotement*/
+.tits
+{
+    -webkit-animation-name: titi;
+    -webkit-perspective: 100px;
+    -webkit-animation: titi 1s linear infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-name: titi;
+    perspective: 100px;
+    animation: titi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes titi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+@keyframes titi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo img
+{
+    width: 80px;
+    height: 80px;
+    -webkit-animation-name: logi;
+    -webkit-perspective: 50px;
+    -webkit-animation: logi 1s linear infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-name: logi;
+    perspective: 50px;
+    animation: logi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes logi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+@keyframes logi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+/*nav en haut à droite*/
+#abc nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#abc nav li
+{
+    margin-right: 15px;
+}
+
+#abc nav a
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+#abc nav a:hover
+{
+    color: aquamarine;
+    border-bottom: 3px solid white;
+}
+
+/*nav côté gauche*/
+.cote1
+{
+    position: fixed;
+    top: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #77b9c7;
+    box-shadow: 0px 2px 5px #1c1a19;
+    padding: 5px;
+}
+
+.cote1 nav h3
+{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #358b9d;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    color: yellow;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cote1 nav li
+{
+    margin-left: 0px;
+    color: yellow;
+    list-style-type: circle;
+}
+
+/*Meilleur effet visuel jamais obtenu sur le text!!! :)*/
+.cote1 nav a
+{
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cote1 nav a:hover
+{
+    color: #54cccb;
+}
+
+/* Bannière */
+#banniere_image
+{
+    margin-top: 15px;
+    margin-left: 300px;
+    height: 200px;
+    width: 900px;
+    border-radius: 5px;
+    background: url('../images/footban.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19; /*ombre de la bannière*/
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.3); /*banderole transparente de la bannière*/
+    font-size: 0.8em;
+}
+
+.banni
+{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 60px;
+    color: white;
+    text-shadow: 10px 10px 10px black;
+    opacity: 0;
+    -webkit-animation-name: ban;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: ban;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ban {
+    0% { opacity: 0;}
+    15% { opacity: 0;}
+    20% { opacity: 1;}
+    25% { opacity: 0;}
+    30% { opacity: 1;} 
+    35% { opacity: 0;} 
+    40% { opacity: 0.1;} 
+    45% { opacity: 0.2;} 
+    55% { opacity: 0.3;}
+    60% { opacity: 0.4;}
+    65% { opacity: 0.5;}
+    70% { opacity: 0.6;}
+    75% { opacity: 0.7;}
+    80% { opacity: 0.8;}
+    90% { opacity: 0.9;}
+    100% { opacity: 1;}
+}
+
+@keyframes ban {
+    0% { opacity: 0;}
+    15% { opacity: 0;}
+    20% { opacity: 1;}
+    25% { opacity: 0;}
+    30% { opacity: 1;} 
+    35% { opacity: 0;} 
+    40% { opacity: 0.1;} 
+    45% { opacity: 0.2;} 
+    55% { opacity: 0.3;}
+    60% { opacity: 0.4;}
+    65% { opacity: 0.5;}
+    70% { opacity: 0.6;}
+    75% { opacity: 0.7;}
+    80% { opacity: 0.8;}
+    90% { opacity: 0.9;}
+    100% { opacity: 1;}
+}
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    background: url('../images/rouge.jpg') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 6px 4px 0px 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+.bouton_rouge2
+{
+    height: 25px;
+    position: absolute;
+    margin-left: 5px;
+    bottom: 5px;
+    background: url('../images/rouge.jpg');
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 6px 4px 0px 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge2 img
+{
+    border: 0;
+}
+
+/*Section*/
+section
+{
+    margin-bottom:20px;   
+}
+
+section h1
+{
+    font-family: arial;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section p
+{
+    font-family: arial;
+    font-weight: normal;
+}
+
+article
+{
+    text-align: justify;
+    width: 900px;
+    margin-left: 295px;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: coral;
+    flex:3;
+    background-color: #77b9c7;  
+}
+
+article h1
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px 1px black;
+    text-align: left;
+    font-size: 1.6em;
+}
+
+article h3
+{
+    color: white;
+    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px 1px black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article p
+{
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article p strong
+{
+    color: aquamarine;
+}
+
+article ul li
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+article ul li a
+{
+    font-size: 1em;
+}
+
+/* Image de l'article */
+
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 0px;
+    width: 10%;
+    height: 10%;
+}
+
+
+/* Footer */
+footer 
+{
+    margin-top: 15px;
+    background: url('../images/sepa.jpg') repeat-x top;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 300px;
+}
+
+footer h1
+{
+    font-family: arial;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.1em;
+}
+
+.black_band
+{
+    margin-top: 20px;
+    position: relative;
+    height: 220px;
+    width: 900px; 
+    display: flex;
+    justify-content: space-between;
+    background: #77b9c7;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #1c1a19; /*ombre de la bannière*/
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+.black2
+{
+    width: 40%;
+}
+
+.black2 h1
+{
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+.tweet
+{
+    margin-top: 7%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.tweet li
+{
+    color: yellow;
+    list-style-type: circle;
+}
+
+.tweet a
+{
+    color: white;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.tweet ul li a:hover
+{
+    color: #54cccb;
+}
+
+#listes_ttt
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 5px;
+}
+
+#medics
+{
+    width: 60%;
+    margin-left: 5%;
+}
+
+#medics h1
+{
+    margin-left: 40px;
+    margin-top: 20px;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+#medics ul
+{
+
+    padding-left: 2px;
+}
+
+#medics li
+{
+    list-style-type: square;
+    color: red;
+}
+
+.clas2
+{
+    margin-top: 0px;
+    margin-left: 10%;
+}
+
+#medics ul li a
+{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    font-size: 1.4em;
+}
+
+#medics ul li a:hover
+{
+    color: #54cccb;
+}
+
+/*Media screen*/
+@media screen and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width:auto; 
+        height: auto;
+    }
+
+    .systema
+    {
+        width: 100%;
+        margin: auto;
+    }
+    
+    #abc nav ul
+    {
+        flex-direction: column;
+    }
+
+    #abc nav ul li a
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    #banniere_image
+    {
+        width: auto;
+    }
+
+    .cote1
+    {
+        width: 25%;
+        margin-top: 5%;
+    }
+
+    .cote1 nav h1
+    {
+        width: 25%;
+    }
+
+    .cote1 nav li
+    {
+        width: 25%;
+    }
+
+    .cote1 nav a
+    {
+        width: 25%;
+    }
+
+    section
+    {
+        width: auto;
+    }
+
+    .cote2
+    {
+        width: auto;
+    }
+
+    article
+    {
+        width: auto;
+    }
+
+    aside
+    {
+        width: auto;
+    }
+
+    .audio
+    {
+        width: auto;
+    }
+
+    .bibi
+    {
+        width: auto;
+    }
+
+    .prog_tabs
+    {
+        width: auto;
+    }
+
+    #lediv
+    {
+        width: auto;
+        margin-left: 35%;
+    }
+
+    .tweet ul li a
+    {
+        width: auto;
+        font-size: 1em;
+    }
+
+    #listes_ttt ul li a
+    {
+        width: auto;
+        font-size: 1em;
+    }
+}
+
+

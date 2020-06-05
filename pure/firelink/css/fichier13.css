@@ -1,0 +1,366 @@
+@font-face
+{
+    font-family: 'amita-bold';
+    src: url('polices/amita-bold.ttf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body
+{
+    background: url('fd.jpg');
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+}
+
+h1
+{
+    color: navy;
+}
+
+h3
+{
+    color: salmon;
+}
+
+h4
+{
+    color: navy;
+    padding-left: 10px;
+}
+
+h5
+{
+    color: yellow;
+}
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a
+{
+    font-family: 'amita-bold', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+
+/*Header*/
+
+
+header
+{
+    background: url('sepa.jpg') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 300px;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+    color: navy;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img
+{
+    width: 80px;
+    height: 80px;
+}
+
+header h1
+{
+    font-family: amita-bold, serif;
+    color: navy;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: amita-bold, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+
+/*nav en haut à droite*/
+
+#abc nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#abc nav li
+{
+    margin-right: 15px;
+}
+
+#abc nav a
+{
+    font-size: 1.3em;
+    color: #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+#abc nav a:hover
+{
+    color: #54cccb;
+    border-bottom: 3px solid #54cccb;
+}
+
+
+/* Bannière */
+
+
+#banniere_image
+{
+    margin-top: 15px;
+    margin-left: 300px;
+    height: 250px;
+    width: 900px;
+    border-radius: 5px;
+    background: url('psychia.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19; /*ombre de la bannière*/
+    margin-bottom: 25px;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.6); /*banderole transparente de la bannière*/
+    font-size: 0.8em;
+}
+
+#banniere_description h4
+{
+    color: yellow;
+}
+
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: url('rouge.jpg') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 6px 4px 0px 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+
+/*nav côté gauche*/
+
+
+#cote1
+{
+    width: 200px;
+    float: left;
+    position: fixed;
+    color: white;
+    font-size: 0.8em;
+    background-color: #77b9c7;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#cote1 nav h3
+{
+    margin-top: 0px;
+    background-color: #358b9d;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: yellow;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#cote1 nav li
+{
+    margin-left: 0px;
+    color: white;
+}
+
+#cote1 nav a
+{
+    font-size: 1.0em;
+    color: white;
+    padding-top: 3px;
+    text-decoration: none;
+}
+
+#cote1 nav a:hover
+{
+    color: #8c38c1;
+}
+
+
+/*Section*/
+
+
+section
+{
+    margin-bottom:20px;   
+}
+
+
+article #liens
+{
+    text-transform: uppercase;
+}
+
+article
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    margin-left: 300px;
+    flex:3;
+}
+
+
+/*Titre corps médical du Site*/
+
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+
+/* Footer */
+
+
+footer
+{
+    top:50px;
+    display: flex;
+    justify-content: space-between;
+    background: url('sepa.jpg') repeat-x top;
+    padding-top: 25px;
+    margin-left: 300px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+    color: blue;
+}
+
+#tweet h1
+{
+    text-align: left;
+}
+
+#tweet
+{
+    width: 30%;
+}
+
+#mes_photos
+{
+    width: 35%;
+    text-align: center;
+}
+
+#medics h1
+{
+    text-align: center;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+#medics
+{
+    width: 35%;
+    margin-left: 20px;
+}
+
+#mes_photos img
+{
+    border: 1px solid #181818;
+    margin-right: 2px;
+    width: 30%
+}
+
+#listes_ttt
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+#medics ul
+{
+    list-style-image: url('ico_liensexterne.png');
+    padding-left: 2px;
+}
+
+#medics a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+
+#medics a:hover
+{
+    color: pink;
+}
+
+
+
+}

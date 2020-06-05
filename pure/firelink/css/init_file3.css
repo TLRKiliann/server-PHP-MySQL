@@ -1,0 +1,843 @@
+@font-face
+{
+    font-family: 'amita-bold';
+    src: url('polices/amita-bold.ttf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background: url('../images/fd.jpg');
+    font-family: 'Trebuchet MS', Arial, serif;
+    color: #181818;
+}
+
+h1
+{
+    color: navy;
+    text-shadow: 2px 2px #77b9c7;
+}
+
+h2
+{
+    color: navy;
+}
+
+h3
+{
+    color: #77b9c7;
+    text-shadow: 2px 2px navy;
+}
+
+h4
+{
+    color: navy;
+    padding-left: 10px;
+}
+
+h5
+{
+    color: yellow;
+}
+
+#bloc_page
+{
+    width: 1200px;
+    margin: auto;
+}
+
+/*Header*/
+header
+{
+    background: url('../images/sepa.jpg') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 300px;
+}
+
+header h1
+{
+    font-family: arial, serif;
+    color: navy;
+    text-shadow: 2px 2px #77b9c7;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0 0 0 10px;
+}
+
+header h2
+{
+    font-family: arial, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Main menu pseudo et déconnexion */
+.systema
+{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    margin: auto;
+    margin-left: 300px;
+    height: 30px;
+    line-height: 20px;
+    box-shadow: 0px 4px 4px #1c1a19;
+    background-color: #77b9c7;
+}
+
+.bmenu
+{
+    margin-left: 10px;
+}
+
+.bmenudeco
+{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px navy;
+    text-shadow: 1px 1px 1px navy;
+    font-size: 1.2em;
+}
+
+.bmenudeco:hover
+{
+    color: aquamarine;
+}
+
+.pseudocount
+{
+    margin-left: 30%;
+}
+
+.pseudodeco
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    border-width: 2px;
+    color: navy;
+    /*text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;*/
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.0em;
+}
+
+/*Le logo avec deco*/
+.deconnect
+{
+    margin-right: 10px;
+    display: flex;
+    flex-direction: inline-block;
+}
+
+.img_dec
+{
+    width: 18%;
+    height: 18%;
+}
+
+.decodeco
+{
+    margin-left: 3px;
+    text-decoration: none;
+    color: yellow;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    font-size: 1.2em;
+}
+
+.decodeco:hover
+{
+    color: red;
+}
+/*MODIFin*/
+
+#titre_principal
+{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+#titre_principal h2
+{
+    color: white;
+}
+
+/*Titre principale pivotement*/
+.tits
+{
+    -webkit-animation-name: titi;
+    -webkit-perspective: 100px;
+    -webkit-animation: titi 1s linear infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-name: titi;
+    perspective: 100px;
+    animation: titi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes titi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+@keyframes titi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo img
+{
+    width: 80px;
+    height: 80px;
+    -webkit-animation-name: logi;
+    -webkit-perspective: 50px;
+    -webkit-animation: logi 1s linear infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-name: logi;
+    perspective: 50px;
+    animation: logi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes logi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+@keyframes logi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+
+/*nav en haut à droite*/
+#abc nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#abc nav li
+{
+    margin-right: 15px;
+}
+
+#abc nav a
+{
+    font-size: 1.3em;
+    color: blue;
+    padding-bottom: 3px;
+    text-decoration: none;
+    text-shadow: 2px 2px #54cccb;
+}
+
+#abc nav a:hover
+{
+    color: #54cccb;
+    border-bottom: 3px solid #54cccb;
+}
+
+
+/*nav côté gauche*/
+.cote1
+{
+    position: fixed;
+    top: 25px;
+    width: 250px;
+    height: auto;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #77b9c7;
+    box-shadow: 0px 2px 5px #1c1a19;
+    padding: 5px;
+}
+
+nav .cote1 h1
+{
+    margin-top: 0px;
+    background-color: #358b9d;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cote1 nav h3
+{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #358b9d;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    color: yellow;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cote1 nav li
+{
+    margin-left: 0px;
+    color: yellow;
+    list-style-type: circle;
+}
+
+.cote1 nav a
+{
+    font-size: 1.0em;
+    color: white;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cote1 nav a:hover
+{
+    color: #8c38c1;
+}
+
+
+/* Bannière */
+.banniere_image
+{
+    margin-top: 15px;
+    margin-left: 300px;
+    height: 200px;
+    width: 900px;
+    border-radius: 5px;
+    background: url('../images/land2.jpg') bottom center no-repeat;
+    background-size: 1000px 250px;
+    position: relative;
+    opacity: 0.8;
+    box-shadow: 0px 4px 4px #1c1a19; /*ombre de la bannière*/
+}
+
+.i-large,
+.i-medium,
+.i-small {
+	position : absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.i-large {
+	background: url("../images/parti_large.png") repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 2s linear infinite;
+	     -o-animation: dropFlowParticles 2s linear infinite;
+	        animation: dropFlowParticles 2s linear infinite;
+                opacity: 0.2;
+}
+.i-medium {
+	background: url("../images/parti_med.png") repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 12s linear infinite;
+	     -o-animation: dropFlowParticles 12s linear infinite;
+	        animation: dropFlowParticles 12s linear infinite;
+                opacity: 0.2;
+}
+.i-small {
+	background:url("../images/parti_small.png") repeat 0px 0px;
+	-webkit-animation: dropFlowParticles 27s linear infinite;
+	     -o-animation: dropFlowParticles 27s linear infinite;
+	        animation: dropFlowParticles 27s linear infinite;
+                opacity: 0.2;
+}
+ 
+@-webkit-keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 413px; }
+}
+
+@keyframes dropFlowParticles {
+	from { background-position: 0 0; }
+	to { background-position: 0 413px; }
+}
+
+
+/*Section*/
+section
+{
+    margin-top: 10px;
+    margin-bottom:20px; 
+    display: flex;
+}
+
+section h1, footer h1
+{
+    font-family: arial;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+section p
+{
+    font-family: arial;
+    font-weight: normal;
+}
+
+article
+{
+    text-align: justify;
+    width: 900px;
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+.intro
+{
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #447eb3;
+}
+
+.navigate
+{
+    margin-top: 5px;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #447eb3;
+}
+
+.chat
+{
+    margin-top: 5px;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #447eb3;
+}
+
+
+article h1
+{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    color: red;
+    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px 1px black;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+article h3
+{
+    color: #77b9c7;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article p
+{
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+article a
+{
+    text-decoration: none;
+}
+
+article ul li
+{
+    font-size: 1em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+aside
+{
+    text-align: justify;
+    align-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+    border: 2px;
+    background: #77b9c7;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px #1c1a19;  
+    /* justify-content: flex-end; */
+}
+
+aside h4
+{
+    text-decoration: none;
+    text-content: justify;
+    margin: 5px;
+}
+
+aside a
+{
+    text-decoration: none;
+}
+
+aside p
+{
+    color: white;
+    text-content: justify;
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+.tit2 h1
+{
+    color: navy;
+    font-size: 1.2em;
+    text-align: center;
+    
+}
+
+#img_serp
+{
+    text-align: center;
+}
+
+.audio
+{
+    margin-top: 100px;
+    text-align: center;
+}
+
+/* 2ème photo de moi (en-bas) */
+
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 15%;
+    height: 10%;
+}
+
+.bibi
+{
+    width: 880px;
+    margin-top: 10px;
+    margin-left: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #447eb3;
+}
+
+.bibi h3
+{
+    color: #77b9c7;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    text-transform: uppercase;
+    font-size: 1.4em
+    padding-right: 10px;
+}
+
+.bibi a
+{
+    text-decoration: none;
+}
+
+.prog_tabs
+{
+    width: 880px;
+    margin-top: 10px;
+    margin-left: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #456d6e;
+    text-shadow: 2px 2px navy;
+    text-shadow: 1px 1px 1px navy;
+    text-align: justify;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #ff9900;
+}
+
+
+/* Footer */
+
+footer 
+{
+    margin-top: 15px;
+    background: url('../images/sepa.jpg') repeat-x top;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 300px;
+}
+
+.black_band
+{
+    margin-top: 20px;
+    position: relative;
+    height: 250px;
+    width: 900px; 
+    display: flex;
+    justify-content: space-between;
+    background: #77b9c7;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px #1c1a19; /*ombre de la bannière*/
+}
+
+#lediv 
+{ 
+    width: 400%; 
+    margin-top: 30px;
+    max-width: 900px; 
+    margin-left: 30%;
+} 
+
+div#lediv figure img 
+{ 
+    width: 25%; 
+    height: auto;
+    float: left;
+}
+
+div#lediv 
+{ 
+    width: 60%; 
+    max-width: 1000px; 
+    overflow: hidden;
+}
+
+div#lediv figure {
+    position: relative;
+    width: 400%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 300px;
+    text-align: left;
+    -webkit-animation: 20s slidy infinite;
+    animation: 20s slidy infinite;
+}
+
+@-webkit-keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+@keyframes slidy {
+  0% { left: 0%; }
+  20% { left: 0%; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+    color: white;
+}
+
+.black2
+{
+    width: 40%;
+}
+
+.black2 h1
+{
+    text-align: center;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+.tweet
+{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+}
+
+.tweet li
+{
+    color: white; 
+    list-style-type: circle;
+}
+
+.tweet a
+{
+    color: white; 
+    text-decoration: none;
+    font-size: 1.4em;
+}
+
+.tweet a:hover
+{
+    color: navy; 
+}
+
+#listes_ttt
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-right: 5px;
+}
+
+#medics
+{
+    width: 60%;
+    margin-left: 10%;
+}
+
+#medics h1
+{
+    text-align: center;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+#medics ul
+{
+
+    padding-left: 2px;
+}
+
+#medics li
+{
+    list-style-type: square;
+    color: white;
+}
+
+.clas2
+{
+    margin-left: 10%;
+}
+
+#medics ul li a
+{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+}
+
+#medics a:hover
+{
+    color: navy;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    #bloc_page
+    {
+        width:auto; 
+        height: auto;
+    }
+    
+    #abc nav ul
+    {
+        flex-direction: column;
+    }
+
+    #abc nav ul li a
+    {
+        width: auto;
+        text-align: left;
+    }
+
+    #banniere_image
+    {
+        width: auto;
+    }
+
+    .cote1
+    {
+        width: 20%;
+    }
+
+    .cote1 nav h1
+    {
+        width: 20%;
+    }
+
+    .cote1 nav li
+    {
+        width: 20%;
+    }
+
+    .cote1 nav a
+    {
+        width: 20%;
+    }
+
+    section
+    {
+        width: auto;
+    }
+
+    .cote2
+    {
+        width: auto;
+    }
+
+    .prog_tabs
+    {
+        width: auto;
+    }
+
+    #lediv
+    {
+        width: auto;
+        margin-left: 35%;
+    }
+
+    .tweet ul li a
+    {
+        width: auto;
+        font-size: 1em;
+    }
+
+    #listes_ttt ul li a
+    {
+        width: auto;
+        font-size: 1em;
+    }
+}

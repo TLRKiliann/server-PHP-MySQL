@@ -1,0 +1,87 @@
+@media all and (max-width: 1024px)
+
+{
+    header
+    {
+        width: 50%; 
+        font-size: 0.8em;
+    }
+
+    #abc nav li
+    {
+        width: 30%; 
+        margin-top: 5px;
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+
+    #banniere_image
+    {
+        width: 50%;
+    }
+
+
+    section
+    {
+        flex-direction: column;
+    }
+
+    article
+    {
+        width:50%;
+    }
+
+    aside
+    {
+        display: none;
+    }
+
+
+    #fleche_bulle
+    {
+        display: none;
+    }
+
+    
+    #photo_zozor img
+
+    {
+        width: 110px;
+        float: right;
+        margin-left: 15px;
+    }
+
+    
+    aside p:last-child
+    {
+        text-align: center;
+    }
+
+    #cote1
+    {
+        font-size: 0.7em;
+    }
+
+    .audio_joy
+    {
+        top: 85%;
+    }
+
+    .corbeaunicky 
+    {
+    position: absolute;
+    }
+
+    footer
+    {
+        width: 50%;
+        font-size: 0.8em;
+    }
+
+    div#lediv 
+    { 
+        width: 50%; 
+        max-width: auto; 
+        margin-left: 35%;
+    } 
+}

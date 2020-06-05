@@ -1,0 +1,181 @@
+body
+{
+    background-image: url('../images/land2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: 110%;
+}
+
+.heat
+{
+    text-align: center;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 2px white, 0 0 3px #00e4b8, 0 0 5px white;
+}
+
+.deconnect
+{
+    width: 70%;
+    margin: auto; 
+    text-align: right;
+} 
+
+.deco
+{
+    font-size: 1.2em;
+    text-decoration: none;
+    color: red;
+    text-shadow: 1px 1px 2px white, 0 0 3px navy, 0 0 5px white;
+}
+
+.deco:hover
+{
+    color: yellow; 
+}
+
+.alitem
+{
+    width: 70%;
+    margin: auto; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: baseline;
+    align-items: flex-end;
+}
+
+.backpage
+{   
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px white, 0 0 3px #00e4b8, 0 0 5px white;
+}
+
+.backpage:hover
+{
+    color: yellow;    
+}
+
+.backmain
+{    
+    color: black;
+    text-decoration: none;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px white, 0 0 3px #00e4b8, 0 0 5px white;
+}
+
+.backmain:hover
+{
+    color: yellow;    
+}
+
+.lastpost
+{
+    color: yellow;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 2px white, 0 0 3px navy, 0 0 5px white;
+}
+
+.heatitle
+{
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px white, 0 0 3px blue, 0 0 5px white;
+    font-size: 1.0em;
+}
+
+.heatitle:hover
+{
+    color: yellow;    
+}
+
+.heatcomment
+{
+    text-align: center;
+    text-shadow: 1px 1px 2px white, 0 0 3px orange, 0 0 5px white;
+}
+
+
+.headwrite
+{
+    text-align: center;
+    text-shadow: 1px 1px 2px white, 0 0 3px orange, 0 0 5px white;
+}
+
+.textdeco
+{
+    color: yellow;
+    text-shadow: 1px 1px 2px white, 0 0 3px blue, 0 0 5px white;
+    font-size: 1.0em;
+}
+
+.bodytit
+{
+    width: 70%;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.0em !important;
+    color: #00e4b8;
+    background-color: black !important;
+}
+
+.bodytit2
+{
+    width: 70%;
+    margin: auto;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 1.0em !important;
+    background-color: #d2d9ff;
+}
+
+.secondframe
+{
+    width: 70%;
+    margin: auto;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 1.2em;
+    background-color: #d2d9ff;
+}
+
+.mef
+{
+    text-align: center;
+}
+
+.alpha
+{
+    color: #efdc84 !important;
+    text-decoration: none;
+}
+
+.beta
+{
+    color: red !important;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px)
+{
+    body
+    {
+        background-image: url('../images/land2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center;
+        background-size: 200%;
+    }
+}

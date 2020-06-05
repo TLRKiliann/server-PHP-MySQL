@@ -1,0 +1,120 @@
+
+
+body
+{
+    background: url('../images/fd.jpg');
+    font-family: 'Trebuchet MS', Arial, serif;
+    color: #181818;
+}
+
+.loader h1
+{
+    position: relative;
+    text-align: center;
+    text-shadow: 1px 1px 2px white, 0 0 3px blue, 0 0 5px white;
+    font-size: 3.5em;
+    -webkit-animation-name: falling;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: falling;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes falling {
+    0%   {top: -300px;}
+    40%  {top: 150px;}
+    60%  {top: 130px;}
+    100% {top: 150px;}
+}
+
+@keyframes falling {
+    0%   {top: -300px;}
+    40%  {top: 150px;}
+    60%  {top: 130px;}
+    100% {top: 150px;}
+}
+
+.entry a
+{
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 47%;
+    color: #00e250;
+    text-decoration: none;
+    padding: 6px 6px 6px 6px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: navy;
+    border-radius: 5px;
+    font-size: 1.2em;
+    opacity: 0;
+    -webkit-animation-name: ent;
+    -webkit-animation-delay: 1s;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: ent;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ent {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}  
+}
+
+@keyframes ent {
+    0%   {opacity: 0;}
+    100% {opacity: 1;}  
+}
+
+.in:hover
+{
+    background-color: blue;
+    color: yellow;
+}
+
+.actu h2
+{
+    color: blue;
+    position: relative;
+    margin-top: 30%;
+    text-align: center;
+}
+
+.actu p
+{
+    position: relative;
+    text-align: center;
+    margin-top: 0%;
+    padding: 6px 6px 6px 6px;
+    font-size: 1.2em;
+}
+
+.actu a
+{
+    text-decoration: none;
+    color: #5caf9f;
+}
+
+.actu a:hover
+{
+    color: blue;
+}
+
+/*Sous-titre pivotement*/
+.actu p
+{
+    animation-name: titi;
+    perspective: 100px;
+    animation: titi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@keyframes titi
+{
+    0% { transform: rotateX(0deg);}
+    50% { transform: rotateX(360deg);}
+    100% { transform: rotateX(720deg);}
+}

@@ -1,0 +1,66 @@
+body
+{
+    max-width: auto;
+    background: url('../images/fd.jpg');
+    margin-top: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
+    text-align: center;
+    background-color: white;
+    font-family: arial, bold, serif;
+}
+
+.hat
+{
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px black;
+    background-color: blue;
+    color: yellow;
+    text-align: center;
+    font-size: 2em; 
+    font-family: arial, serif;
+}
+
+.secto
+{
+    margin-top: 100px;
+    font-size: 1.2em; 
+}
+
+.date
+{
+    color: red;
+}
+
+footer
+{
+    margin-top: 100px;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+    font-size: 1.1em;
+    border: 2px solid navy;
+    background-color: navy;
+    box-shadow: 0px 4px 4px #1c1a19;
+    border-radius: 10px;    
+}
+
+.acc:hover
+{
+    text-color: red;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: yellow;
+    background-color: navy;
+}
+
+footer a:hover
+{
+    color: red;
+}

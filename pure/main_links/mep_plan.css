@@ -1,0 +1,240 @@
+body
+{
+    background-color: #247384;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Barre de menu en html5 ccs3*/
+header
+{
+    margin-left: 100px; 
+    margin-right: 100px;
+    border-left: 2px solid aquamarine;
+    border-right: 2px solid aquamarine;
+}
+
+nav
+{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #77b9c7;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul
+{
+    list-style: none;
+}
+
+nav ul li
+{
+    float: left;
+    width: 19%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul li a
+{
+    font-size: 1.4em;
+}
+
+nav ul::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a
+{
+    display: block;
+    text-decoration: none;
+    color: navy;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover
+{
+    color: aquamarine;
+    border-bottom: 2px solid navy;
+}
+
+nav > ul li:hover .sub
+{
+    display: block;
+}
+
+.sub
+{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: turquoise;
+    position: absolute;
+    width: 80%;
+    z-index: 1000;
+}
+
+.sub li
+{
+    float: none;
+    width: 100%;
+    text-align: left;
+    list-style-type: circle;
+}
+
+.sub a
+{
+    padding: 10px;
+    border-bottom: none;
+    font-size: 1.2em;
+}
+
+.sub a:hover
+{
+    border-bottom: none;
+    background-color: turquoise;
+}
+
+.dwrap > a::after
+{
+    /*content: "";*/
+    font-size: 12px;
+}
+
+.all
+{
+    width: auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 2px solid aquamarine;
+    border-right: 2px solid aquamarine;
+}
+
+div.all 
+{
+    background-color: #77b9c7;
+}
+
+.info_user
+{
+    margin-top: 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.security
+{
+    margin-top: 0px;
+    text-align: justify;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px white, 0 0 3px aquamarine, 0 0 5px white;
+}
+
+.separation
+{
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.border
+{
+    font-size: 2em;
+    text-shadow: 1px 1px 2px white, 2px 2px 3px lightgreen, 0 0 5px white;
+}
+
+.border h3
+{
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+.date h1
+{
+    text-align: justify;
+    margin-top: 0px;
+    padding-top: 20px;
+    text-shadow: 1px 1px 2px white, 0 0 3px aquamarine, 0 0 5px white;
+    /*color: navy;*/
+}
+
+.betwins
+{
+    width: 20%;
+    height: 5px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.date p
+{
+    text-align: justify;
+    margin-top: 20px;
+    margin-top: 0px;
+    text-shadow: 1px 1px 2px white, 0 0 3px blue, 0 0 5px white;
+    font-size: 1.2em;
+}
+
+.infine
+{
+    width: 70%;
+    height: 5px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.loadertwo h1
+{
+    text-align: justify;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px white, 0 0 3px aquamarine, 0 0 5px white;
+    /*color: navy;*/
+}
+
+.betwinstwo
+{
+    width: 20%;
+    height: 5px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.date2 p
+{
+    text-align: justify;
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px white, 0 0 3px blue, 0 0 5px white;
+    font-size: 1.2em;
+}
+
+
+@media screen and (max-width: 1024px)
+{
+    nav ul li
+    {
+        width: 100px;
+    }
+    nav ul li a
+    {
+        font-size: 0.8em;
+    }
+}

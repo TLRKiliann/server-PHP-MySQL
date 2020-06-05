@@ -1,0 +1,409 @@
+@font-face
+{
+    font-family: 'amita-bold';
+    src: url('polices/amita-bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-color: #247384;
+    font-family: Arial, serif;
+}
+
+h1
+{
+    color: navy;
+    text-shadow: 2px 2px #77b9c7;
+}
+
+h2
+{
+    color: navy;
+}
+
+h3
+{
+    color: #77b9c7;
+    text-shadow: 2px 2px navy;
+    text-shadow: 2px 2px 2px navy;
+}
+
+h4
+{
+    color: navy;
+    padding-left: 10px;
+}
+
+h5
+{
+    color: yellow;
+}
+
+#bloc_page1
+{
+    width: 900px;
+    margin: auto;
+}
+
+#bloc_page2
+{
+    width: 900px;
+    margin: auto;
+    -webkit-animation-name: trans;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-fill-mode: forwards;
+    animation-name: trans;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*Header*/
+header
+{
+    background: url('../images/sepa.jpg') repeat-x bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: auto;
+}
+
+header h1
+{
+    /*font-family: arial, serif;*/
+    color: white;
+    text-shadow: 1px 1px black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 3.4em;
+    font-weight: normal;
+    margin: 0 0 0 0px;
+}
+
+header h2
+{
+    font-family: arial, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+
+/* Pseudo et déconnexion */
+.systema
+{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    max-width: 900px;
+    margin: auto; 
+    text-align: right;
+}
+
+.pseudocount
+{
+    margin-top: 10px;
+}
+
+.pseudodeco
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 10px;
+    border-width: 2px;
+    color: white;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+    background-color: #77b9c7;
+}
+
+.deconnect
+{
+    margin-top: 20px;
+}
+
+.decodeco
+{
+    text-decoration: none;
+    color: orange;
+    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.2em;
+}
+
+.decodeco:hover
+{
+    color: yellow;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#titre_principal h2
+{
+    color: white;
+}
+
+@-webkit-keyframes trans {
+    0%  { opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+@keyframes trans {
+    0%  { opacity: 0;}
+    100%{ opacity: 1;}
+}
+
+/*Titre principale pivotement*/
+.tits
+{
+    -webkit-animation-name: titi;
+    -webkit-perspective: 100px;
+    -webkit-animation: titi 1s linear infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-name: titi;
+    perspective: 100px;
+    animation: titi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes titi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+@keyframes titi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+.logo
+{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.logo img
+{
+    width: 80px;
+    height: 80px;
+    -webkit-animation-name: logi;
+    -webkit-perspective: 50px;
+    -webkit-animation: logi 1s linear infinite;
+    -webkit-animation-iteration-count: 1;
+    animation-name: logi;
+    perspective: 50px;
+    animation: logi 1s linear infinite;
+    animation-iteration-count: 1;
+}
+
+@-webkit-keyframes logi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+@keyframes logi
+{
+    0% { transform: rotateY(0deg);}
+    100% { transform: rotateY(360deg);}
+}
+
+/*nav en haut à droite*/
+#abc nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+#abc nav li
+{
+    margin-right: 15px;
+}
+
+#abc nav a
+{
+    font-size: 1.3em;
+    padding-bottom: 3px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+}
+
+#abc nav a:hover
+{
+    color: aquamarine;
+    border-bottom: 3px solid white;
+}
+
+/*nav côté gauche*/
+.cote1
+{
+    position: fixed;
+    top: 20px;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #77b9c7;
+    box-shadow: 0px 2px 5px #1c1a19;
+    padding: 5px;
+}
+
+.cote1 nav h3
+{
+    margin-top: 0px;
+    padding: 10px;
+    background-color: #358b9d;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    color: yellow;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.cote1 nav li
+{
+    margin-left: 0px;
+    color: yellow;
+    list-style-type: circle;
+}
+
+/*Meilleur effet visuel jamais obtenu sur le text!!! :)*/
+.cote1 nav a
+{
+    font-size: 1.1em;
+    color: white;
+    text-shadow: 1px 1px blue;
+    text-shadow: 1px 1px 1px blue;
+    padding-top: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.cote1 nav a:hover
+{
+    color: #54cccb;
+}
+
+/* Bannière */
+#banniere_image
+{
+    position: relative;
+    padding-bottom: 10%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-bottom: 15px;
+    height: 250px;
+    width: 900px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px #1c1a19; /*ombre de la bannière*/
+    background: url('../images/f11.jpg') no-repeat;
+}
+
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.3); /*banderole transparente de la bannière*/
+    font-size: 0.8em;
+}
+
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 7px;
+    bottom: 5px;
+    background: url('../images/rouge.jpg') repeat-x;
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 6px 4px 0px 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge img
+{
+    border: 0;
+}
+
+.bouton_rouge2
+{
+    height: 25px;
+    position: absolute;
+    margin-left: 5px;
+    bottom: 5px;
+    background: url('../images/rouge.jpg');
+    border: 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 6px 4px 0px 4px;
+    color: white;
+    text-decoration: none;
+}
+
+.bouton_rouge2 img
+{
+    border: 0;
+}
+
+/*Section*/
+section
+{
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+section h1
+{
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+section p
+{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+section a
+{
+    color: yellow;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* Footer */
+.black_band
+{
+    margin-left: auto;
+    display: flex;
+    background: url('../images/sepa.jpg') repeat-x top;
+
+}
+
+
+
+
