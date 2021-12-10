@@ -90,7 +90,7 @@ else
 			        $heure = date("H:i");
 			 
 			        // Enregistrement dans un fichier.txt
-			        $fp =fopen("ips.txt","a");
+			        $fp =fopen("ip_registrer.txt","a");
 			        fputs ($fp,  " $ip || $date || $heure\n ");
 			        fclose($fp);
 			        ?>
