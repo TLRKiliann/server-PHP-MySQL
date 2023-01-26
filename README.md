@@ -10,9 +10,9 @@ Mon premier site !
 
 - Barre de recherche
 
-- Liens vers des universités en rapport à la psychiatrie et la neurologie.
+- Liens vers des sites universitaires en rapport avec la psychiatrie et la neurologie.
 
-- Des diagnostics et symptômatolgies tirés du Manual Merck.
+- Diagnostics et symptômes tirés du Manual Merck.
 
 ---
 
@@ -20,4 +20,4 @@ Ce site peut-être hébergé sur apache2 (raspberry pi).
 
 Enjoy !
 
-ko@l@tr33 >:koala>
+ko@l@tr33 :koala:
